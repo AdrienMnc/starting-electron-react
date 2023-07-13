@@ -1,0 +1,19 @@
+{
+  "name": "demo-electron-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev:electron": "NODE_ENV=development electron .",
+    "dev:vite": "cd ./app && npm run dev",
+    "dev": "concurrently \"npm run dev:electron\" \"npm run dev:vite\"",
+    "start": "electron .",
+    "build:vite": "cd ./app && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^25.3.0"
+  }
+}
